@@ -38,7 +38,9 @@ const App = () => {
         <Image source={require('./image/bauru3.jpg')}
         style={styles.imagemEsquerda} />
         <Text style={styles.textoGeografico}>
-          A área do munícipio, segundo o Instituto Brasileiro de Geografia e Estatística, é de 667,684 km². Situa-se a 22°18'54" de latitude sul e 49°03'39" de longitude oeste e está a uma distância de 326 quilômetros a noroeste da capital paulista. Limita-se com: Reginópolis (a norte); Arealva (a nordeste); Pederneiras (a leste); Piratininga(a sul); Agudos(sudeste); e Avaí (oeste.)
+          A área do munícipio, segundo o Instituto Brasileiro de Geografia e Estatística, é de 667,684 km².
+          Situa-se a 22°18'54" de latitude sul e 49°03'39" de longitude oeste e está a uma distância de 326 quilômetros a noroeste da capital paulista.
+          Limita-se com: Reginópolis (a norte); Arealva (a nordeste); Pederneiras (a leste); Piratininga(a sul); Agudos(sudeste); e Avaí (oeste.)
         </Text>
       </View>
       <View style={styles.secaodireita}>
@@ -90,33 +92,41 @@ const styles = StyleSheet.create({
   },
   secaoesquerda: {
     flexDirection: 'row',
-    padding: 5,
+    padding: 1,
   },
   imagemEsquerda: {
-   width: 100,
-   height: 150,
-   resizeMode: 'cover',
+    marginTop: 5,
+   width: 150,
+   height: 240,
+   resizeMode:'cover',
   },
   textoGeografico: {
     backgroundColor: 'whitesmoke',
     fontSize: 15,
     textAlign: 'justify',
-    padding: 5,
+    paddingRight: 15,
+    width: 250,
+    marginTop: 5,
+    marginLeft: 5
   },
   secaodireita: {
     flexDirection: 'row',
-    padding: 5,
+    padding: 1,
   },
   imagemDireita: {
-   width: 100,
-   height: 150,
+    marginTop: 5,
+   width: 150,
+   height: 240,
    resizeMode: 'cover',
   },
   textoBlueMarinho: {
     backgroundColor: '#add8e6',
     fontSize: 15,
     textAlign: 'justify',
-    padding: -10,
+    paddingRight: 15,
+    width: 250,
+    marginTop: 5,
+    marginLeft: 5
   },
   image: {
     width: '100%',
